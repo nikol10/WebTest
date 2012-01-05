@@ -4,21 +4,25 @@ import java.util.*;
 
 public class Question {
 	private Long id;
-	private String quest;
+	private String question;
 	private List <Answer> answers;
 	
-	public Long GetId() {
+	public Long getId() {
 		return id;
 	}	
-	public void SetId(Long id) {
+	public void setId(Long id) {
 		this.id = id;
+	}	
+	public void setQuestion(String question) {
+		this.question = question;
 	}
-	
-	@OneToMany
-	public List <Answer> GetAllAnswers() {
+	public String getQuestion() {
+		return question;
+	}
+	public List <Answer> getAllAnswers() {
 		return answers;
 	}
-	public void SetAnswers(List <Answer> answers) {
+	public void setAnswers(List <Answer> answers) {
 		this.answers = answers;
 	}
 }

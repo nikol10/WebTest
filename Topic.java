@@ -7,24 +7,24 @@ public class Topic {
 	private String name;
 	private List <Test> tests;
 	
-	public Long GetId() {
+	public Long getId() {
 		return id;
 	}	
-	public void SetId(Long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	
-	public String GetName() {
+	public String getName() {
 		return name;
 	}	
-	public void SetName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
-	public List <Test> GetAllTests() {
+	public List <Test> getAllTests() {
 		return tests;
 	}
-	public void SetAllTests(List <Test> tests) {
+	public void setAllTests(List <Test> tests) {
 		this.tests = tests;
 	}
 	

@@ -9,31 +9,31 @@ public class Test {
 	private List <Question> questions;
 	
 	
-	public Long GetId() {
+	public Long getId() {
 		return id;
 	}	
-	public void SetId(Long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	
-	public String GetName() {
+	public String getName() {
 		return name;
 	}	
-	public void SetName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
-	public String GetDescription() {
+	public String getDescription() {
 		return description;
 	}
-	public void SetDescription(String description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 	
-	public List <Question> GetAllQuestions() {
+	public List <Question> getAllQuestions() {
 		return questions;
 	}
-	public void SetQuestions(ArrayList <Question> questions) {
+	public void setQuestions(List <Question> questions) {
 		this.questions = questions;
 	}
 }

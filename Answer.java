@@ -3,17 +3,21 @@ package models;
 public class Answer {
 
 	private Long id;
-	private String answ;
+	private String answer;
 	private Question question;
 	
-	public Long GetId() {
+	public Long getId() {
 		return id;
 	}	
-	public void SetId(Long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	@ManyToOne
+	public void setAnswer(String answer) {
+		this.answer = answer;
+	}
+	public String getAnswer() {
+		return answer;
+	}
 	public Question getQuestion() {
 		return question;
 	}
