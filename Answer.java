@@ -3,7 +3,7 @@ package models;
 public class Answer {
 
 	private Long id;
-	private String answer;
+	private String text;
 	private Question question;
 	
 	public Long getId() {
@@ -12,11 +12,11 @@ public class Answer {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public void setAnswer(String answer) {
-		this.answer = answer;
+	public void setText(String text) {
+		this.text = text;
 	}
-	public String getAnswer() {
-		return answer;
+	public String getText() {
+		return text;
 	}
 	public Question getQuestion() {
 		return question;
