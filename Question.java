@@ -2,13 +2,28 @@ package models;
 
 import java.util.*;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Question")
 public class Question {
+	@Id
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+	@Column(name = "text")
 	private String text;
+	@OneToMany
+	@JoinColumn(name = "questionId")
 	private List <Answer> answers;
+	@OneToOne
 	private Answer correctAnswer;
+	@ManyToOne
+	@JoinColumn(name = "test")
 	private Test test;
 	
+	public Question() {		
+	}
 	public Long getId() {
 		return id;
 	}	
